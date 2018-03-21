@@ -395,7 +395,7 @@ var isFirefoxType = function isFirefoxType() {
 };
 
 var isSafariType = function isSafariType() {
-    return _getUaData.browser.name === 'Safari' ? true : false;
+    return _getUaData.browser.name === 'Safari' || _getUaData.browser.name === 'Mobile Safari' ? true : false;
 };
 
 var isOperaType = function isOperaType() {
